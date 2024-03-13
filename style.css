@@ -233,6 +233,10 @@ body {
   color: transparent;
   transition: all ease 0.5s;
 }
+.hovercircle{
+  mix-blend-mode: normal !important;
+}
+/* ================ PAGE 2 ============ */
 
 #page2 {
   height: 90vh;
@@ -275,13 +279,38 @@ body {
 #page2 #video .play i {
   font-size: 2vw;
 }
+
+/* ============= PAGE 3 ============= */
+
 #page3 {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
+  padding: 5vh 5vw 5vh 25vw;
   background-color: #151515;
+}
+#page3 :nth-child(1){
+  margin-left: -5%;
+  display: flex;
+  gap: 50px;
+}
+#page3 h1{
+  font-size: 8vw;
+  font-family: plain;
+  font-weight: 500;
+}
+#page3 h4{
+  font-size: 3vw;
+  font-family: silk;
+  font-weight: 500;
+}
+#page3 #underline{
+  margin-top: 3%;
+  width: 100%;
+  border: 1px solid white;
 }
 
 /* =========== PAGE 4 =========== */
+
 #page4 {
   display: flex;
   flex-direction: column;
