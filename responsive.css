@@ -75,6 +75,53 @@
     transform: translate(-50%, -50%);
   }
 
+  /*============== page 3 ==============*/
+  #page3{
+    height: 300vh;
+    padding: 5vw;
+  }
+  #page3 .text-container{
+    margin-top: 2vh;
+    padding-left: 0;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+    gap: 1vw;
+  }
+  #page3 .text-container h4{
+    font-size: 9vw;
+    font-family: silk;
+    font-weight: 500;
+  }
+  #page3 .text-container h1{
+    font-size: 13vw;
+    letter-spacing: -3px;
+    font-weight: 500;
+  }
+  #page3 .underline{
+    width: 90%;
+    margin: 4vh 5vw;
+  }
+  #page3 .image-container{
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #page3 .circle-container{
+    display: none;
+  }
+  #page3 .image-container .images{
+    height: 60vh;
+    width: 85vw;
+    overflow: hidden;
+    margin: 2vw;
+  }
+  
+  
+  
+  
+
+
   /*============== page 4 ==============*/
 
   #page4 {

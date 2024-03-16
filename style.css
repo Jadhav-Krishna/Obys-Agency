@@ -282,31 +282,113 @@ body {
 
 /* ============= PAGE 3 ============= */
 
-#page3 {
-  /* height: 100vh; */
-  width: 100vw;
-  padding: 5vh 5vw 5vh 25vw;
-  background-color: #151515;
+#page3{
+  height: 200vh;
+  padding: 3vw;
 }
-#page3 :nth-child(1){
-  margin-left: -5%;
-  display: flex;
-  gap: 50px;
+
+#page3 .text-container{
+    display: flex;
+    margin: 2vh 5vw 2vh 20vw; 
+    gap: 50px;
 }
-#page3 h1{
-  font-size: 8vw;
-  font-family: plain;
-  font-weight: 500;
-}
-#page3 h4{
+#page3 .text-container h4{
   font-size: 3vw;
   font-family: silk;
   font-weight: 500;
 }
-#page3 #underline{
-  margin-top: 3%;
+#page3 .text-container h1{
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+#page3 .underline{
+  height: 1px;
+  width: 70%;
+  background-color: white;
+  margin: 5vh 5vw 5vh 25vw; 
+}
+
+#page3 .image-container{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#page3 .images{
+  height: 40vw;
+  width: 30vw;
+  overflow: hidden;
+  margin: 2vw;
+}
+
+#page3 .images:nth-child(1){
+  height: 30vw;
+  width: 25vw;
+}
+
+#page3 .images img{
+  height: 100%;
   width: 100%;
+  object-fit: cover;
+}
+
+#page3 .circle-container{
+  height: 22vw;
+  width: 22vw;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#page3 .circle-container .circle-in{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: #000;
+  position: absolute;
   border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  z-index: 9;
+  scale: 0;
+  transition: all ease 0.5s;
+}
+
+#page3 .circle-in p{
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  font-size: 22px;
+  transition: all ease 0.5s;
+  scale: 0;
+  transition-delay: 0.5s;
+}
+#page3 .circle-container:hover .circle-in{
+  scale: 1;
+  background-color: #fff;
+}
+#page3 .circle-container:hover .circle-in p{
+  scale: 1;
+}
+#page3 #circle-container-1{
+  margin-top: 18vw;
+}
+#page3 #circle-container-2 svg{
+  rotate: -45deg;
+}
+
+#page3 .circle-container svg{
+  height: 120px;
+}
+._canvas_container{
+  z-index: 9999999 !important;
 }
 
 /* =========== PAGE 4 =========== */
@@ -534,3 +616,7 @@ body {
 #footer #f2 #f21 div:hover h3 {
   transform: translatey(-35px);
 }
+/* #blank{
+  height: 100vh;
+  width: 100vw;
+} */
