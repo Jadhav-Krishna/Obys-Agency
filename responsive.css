@@ -98,6 +98,10 @@
     letter-spacing: -3px;
     font-weight: 500;
   }
+  #page3 .images{
+    margin-top: 5vh !important;
+  }
+
   #page3 .underline{
     width: 90%;
     margin: 4vh 5vw;
